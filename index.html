@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prateek Gupta | Cyber Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+background:black;
+border-bottom:1px solid cyan;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:cyan;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding-top:100px;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1{
+font-size:60px;
+color:cyan;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#aaa;
+line-height:1.6;
+}
+
+/* PROFILE */
+
+.profile{
+width:320px;
+height:360px;
+border-radius:20px;
+overflow:hidden;
+border:2px solid cyan;
+box-shadow:0 0 30px cyan;
+}
+
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* SECTIONS */
+
+section{
+padding:120px 10%;
+min-height:100vh;
+}
+
+.title{
+font-size:40px;
+color:cyan;
+margin-bottom:40px;
+}
+
+/* GRID AUTO BOX SYSTEM */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+padding:25px;
+border:1px solid cyan;
+border-radius:12px;
+box-shadow:0 0 15px cyan;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:25px;
+border-top:1px solid cyan;
+background:black;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h2 style="color:cyan;">CYBER SOC</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-text">
+<h1>Prateek Gupta</h1>
+
+<p>
+Cyber Security Student specializing in SOC Operations, Threat Detection, and Incident Response.
+Passionate about protecting digital infrastructure and analyzing cyber threats.
+</p>
+
+<p>
+Focused on SIEM monitoring, vulnerability assessment, and real-time security analysis.
+</p>
+
+</div>
+
+<div class="profile">
+<img src="profile.jpg">
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2 class="title">About Me</h2>
+
+<p style="max-width:800px;line-height:1.8;color:#aaa;">
+I am a 4th-year Integrated MTech Cyber Security student aiming to become a SOC Analyst.
+I specialize in monitoring security alerts, detecting threats, analyzing incidents,
+and strengthening network defenses.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+<h2 class="title">Skills</h2>
+
+<div class="grid">
+
+<div class="card">SIEM Monitoring</div>
+<div class="card">Incident Response</div>
+<div class="card">Network Security</div>
+<div class="card">Digital Forensics</div>
+<div class="card">Threat Analysis</div>
+<div class="card">Security Blue Team SOC Analyst</div>
+
+</div>
+</section>
+
+<!-- TOOLS -->
+
+<section id="tools">
+<h2 class="title">Security Tools</h2>
+
+<div class="grid">
+
+<div class="card">Splunk</div>
+<div class="card">Wireshark</div>
+<div class="card">Nmap</div>
+<div class="card">Burp Suite</div>
+<div class="card">Python Programming Language</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+<h2 class="title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">DVWA Penetration Testing</div>
+<div class="card">Bluetooth Security Research</div>
+<div class="card">Network Intrusion Detection</div>
+<div class="card">Penetration Testing</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<h2 class="title">Contact</h2>
+
+<p>Email: prateek235689@email.com</p>
+<p>LinkedIn: www.linkedin.com/in/prateek-gupta-b659503a6</p>
+
+</section>
+
+<footer>
+© 2026 Prateek Gupta | SOC Analyst Portfolio
+</footer>
+
+</body>
+</html>
